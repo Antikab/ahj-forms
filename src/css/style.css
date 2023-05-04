@@ -1,65 +1,67 @@
-html, body {
-  height: 100%;
-  width: 100%;
+html,
+body {
+	height: 100%;
+	width: 100%;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 .form {
-  display: flex;
-  flex-direction:  column;
-  align-items: center;
-  justify-content: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 
-  height: 100%;
+	height: 100%;
 }
 
 .container {
-  position:  relative;
-  margin:  auto;
+	position: relative;
+	margin: auto;
 }
 
 .button {
-  margin: auto;
-  padding: 8px;
+	margin: auto;
+	padding: 8px;
 
-  background-color: #e95858;
-  border: none;
-  border-radius: 6px;
+	background-color: #e95858;
+	border: none;
+	border-radius: 6px;
 
-  font-size: 16px;
-  color: #ffffff;
+	font-size: 16px;
+	color: #ffffff;
 }
 
 .container_tooltip {
-  position:  absolute;
-  z-index: 999;
-  margin-bottom: 6px;
+	position: absolute;
+	width: 100%;
+	z-index: 999;
+	margin-bottom: 9px;
 
-  border: 1px solid #b2aeae;
-  border-radius: 6px;
+	border: 1px solid #b2aeae;
+	border-radius: 6px;
 
-  color: #000000;
-  text-align: left;
+	color: #000000;
+	text-align: left;
 }
 
 .header_tooltip {
-  padding: 5px;
+	padding: 5px;
 
-  background-color: #ededed;
-  border-bottom: 1px solid #b2aeae;
+	background-color: #ededed;
+	border-bottom: 1px solid #b2aeae;
 
-  font-size: 14px;
-  color: #000000;
+	font-size: 14px;
+	color: #000000;
 }
 
 .content_tooltip {
-  padding: 5px;
+	padding: 5px;
 
-  font-size: 12px;
-  color: #000000;
+	font-size: 12px;
+	color: #000000;
 }
