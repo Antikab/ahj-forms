@@ -35,9 +35,14 @@ export default function checkTooltip(button) {
   const tooltipBox = document.querySelector('.container_tooltip');
   if (tooltipBox === null) {
     const tooltip = createTooltip();
-    console.log(tooltipBox);
     parent.appendChild(tooltip);
-    tooltip.style.bottom = `${tooltip.offsetHeight / 2}px`;
+
+    const tooltipHeight = tooltip.offsetHeight;
+    const buttonRect = button.getBoundingClientRect();
+    const buttonTop = buttonRect.top + window.scrollY;
+    const tooltipTop = buttonTop - tooltipHeight - 10;
+    tooltip.style.top = `${tooltipTop}px`;
+    tooltip.style.top = `${buttonRect.top}px`;
   } else {
     tooltipBox.remove();
   }
