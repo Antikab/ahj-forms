@@ -47,4 +47,3 @@ export default function checkTooltip(button) {
     tooltipBox.remove();
   }
 }
-
